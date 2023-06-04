@@ -1,0 +1,134 @@
+
+
+.userMain {
+    font-size: 3.7rem;
+    font-weight: bold;
+    margin:0;
+    
+
+    .wallet {
+        border: 20px solid rgb(245, 245, 245);
+        border-radius: 40px;
+        padding: 30px 25px;
+        background-color: white;
+
+    }
+
+
+    .revenue {
+        border: 20px solid rgb(245, 245, 245);
+        border-radius: 40px;
+        padding: 30px 25px;    
+        background-color: white;
+        
+    }
+    
+    p {
+        font-size: 20px;
+        font-weight: normal;
+        margin: 0;
+        color: grey;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+.userMinor {
+
+    .userMinor {
+        padding: 6px;
+        margin-right: 5px;
+        margin-left: 5px;
+        border-radius: 10px;
+        background-color: white;
+        
+        text-align: center;
+
+        img {
+            height: 200px;
+            width: 100%;
+            
+            object-fit: cover;
+            border-radius: 20px;
+            padding: 5px;
+            pointer-events: none;
+        }
+
+        div {
+            display: flex;
+             
+            img {
+                width: 20px;
+                height: 20px;
+            }
+
+            p {
+                margin: auto 0;
+
+            }
+        }
+        
+
+        hr {
+            
+            border: 1px solid rgb(240, 240, 240);
+            width: 80%;
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 1500px) {
+    .userMinor {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .userMain {
+        display: contents;
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .userMain {
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        
+        grid-row-start: 5;
+        grid-row-end: span 5;
+
+        margin: 0 20px;
+        margin-top: 40px;
+        margin-bottom: 800px;
+
+        // .wallet {
+        //     grid-column-start: 1;
+        //     grid-column-end: span 1;
+            
+        //     grid-row-start: 5;
+        //     grid-row-end: span 5;
+        // }
+
+        // .revenue {
+        //     grid-column-start: 2;
+        //     grid-column-end: span 2;
+            
+        //     grid-row-start: 5;
+        //     grid-row-end: span 5;
+        // }
+        
+        
+        font-size: 3rem;
+
+        // display: none;
+    }
+}

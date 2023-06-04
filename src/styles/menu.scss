@@ -1,0 +1,107 @@
+
+
+ .menuContainer {
+    color: grey;
+    display: block;
+    font-size: 20px;
+
+    p {
+        margin-bottom: 25px;
+    }
+
+    hr {
+        transform: translate(0, 40px);
+        margin-left: 0;
+        border: 1px solid rgb(240, 240, 240);
+        width: 80%;
+    }
+
+    div {
+        margin: 20px 0;
+    }
+    
+    img {
+        opacity: 60%;
+        height: 20px;
+    }
+
+
+    button {
+        all: unset;
+        cursor: pointer;
+        margin-left: 20px;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+}
+
+
+.hamburger {
+    cursor: pointer;
+    float: left;
+
+    .bar {
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin: 5px auto;
+        background-color: black;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1500px) {
+    .menuContainer {
+        img {
+            opacity: 60%;
+            height: 20px;
+        }
+
+        button {
+            display: none;
+        }
+
+    }
+    
+    .hamburger {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    
+    .menuContainer {
+        display: none;
+
+    }
+
+    .menu {
+        margin: 0;
+        background-color: white;
+        z-index: 1;
+        // top: 0;
+        width: 100%;
+        position: fixed
+    }
+    
+    .hamburger {
+        // margin: 0;
+        // grid-column-start: 1;
+        // grid-column-end: span 3;
+        
+        // grid-row-start: 1;
+        // grid-row-end: span 1;
+
+        margin: 20px 0 10px 20px;
+        display: block;
+    }
+}
+
+

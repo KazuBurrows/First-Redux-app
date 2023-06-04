@@ -1,0 +1,134 @@
+
+
+.rankings {
+    width: 100%;
+    font-size: 30px;
+
+    p {
+        display: inline;
+        font-weight: bold;
+    }
+
+    .head {
+        margin-bottom: 30px;
+    }
+
+    
+
+    .currencySelect {
+        display: inline;
+        float: right;
+
+        font-size: 15px;
+
+        background-color: rgb(245, 245, 245);
+        border: 10px solid rgb(245, 245, 245);
+        border-radius: 40px;
+        padding-left: 20px;
+
+        select {
+            all: unset;
+    
+            padding: 5px 20px;
+    
+        } & select:hover {
+            color: black;
+            background-color: lightgrey;
+            padding: 5px 20px;
+            border-radius: 20px;
+        }
+
+        p {
+            font-weight: normal;
+        }
+    }
+
+
+    table {
+        font-size: 20px;
+        width:100%;
+        text-align: left;
+
+        hr {
+            width: 100%;
+            margin: 10px 0;
+            color: rgb(240, 240, 240);
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: contain;
+            background-color: white;
+            vertical-align: sub;
+        }
+    
+        p {
+            vertical-align: super;
+            margin-left: 10px;
+        }
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    
+
+
+    .rankings {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        
+        grid-row-start: 6;
+        grid-row-end: span 6;
+
+        width: 90%;
+        margin: 40px 20px;
+
+
+        .head {
+            font-size: 1.3rem;
+        }
+        .currencySelect {
+            font-size: 1rem;
+            float: right;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+        
+        table {
+            font-size: 1rem;
+            // width: 80%;
+            text-align: center;
+
+            margin: auto
+            img {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                object-fit: contain;
+                background-color: white;
+                vertical-align: sub;
+            }
+        
+            p {
+                display: none;
+            }
+
+            
+
+            .minHide {
+                display: none;
+            }
+        }
+
+
+    }
+    
+
+    
+}

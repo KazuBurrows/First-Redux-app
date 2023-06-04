@@ -1,0 +1,68 @@
+
+
+
+.settings {
+    color: grey;
+    display: block;
+
+    font-size: 20px;
+
+
+    p {
+        margin-bottom: 25px;
+        
+
+    }
+
+    div {
+        // margin-bottom: 15px;
+        margin: 20px 0;
+    }
+    
+    img {
+        opacity: 60%;
+        height: 20px;
+        
+    }
+
+    button {
+        all: unset;
+        cursor: pointer;
+        
+        margin-left: 20px;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+    .settings {
+        img {
+            opacity: 60%;
+            height: 20px;
+        }
+
+        button {
+            display: none;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+    .settings {
+        display: none;
+    }
+    
+}
+

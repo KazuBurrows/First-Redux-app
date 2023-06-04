@@ -1,0 +1,135 @@
+
+.dashboard {
+    text-align: center;
+    font-size: 30px;
+
+    display: grid;
+    gap: 10px;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    
+    .square-back {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+
+        grid-row-start: 1;
+        grid-row-end: span 2;
+
+
+        color: #fff;
+        background-color: rgb(29, 29, 39);
+        margin-top: 0;
+        padding-top: 0;
+        border-radius: 30px;
+        height: 75%;
+        text-align: left;
+
+        h3 {
+            font-size: 40px;
+            margin: 50px 0 0 50px;
+        }
+
+        p {
+            margin: 20px 200px 20px 50px;
+            font-size: 20px;
+            color: grey;
+            font-weight: normal;
+        }
+        
+
+    }
+
+    .scroll-container {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row-start: 2;
+        grid-row-end: span 3;
+
+        margin: 0 18px;
+        height: fit-content;
+
+    }
+
+    .flex-scroll {
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+
+        white-space: nowrap;
+        will-change: transform;
+        user-select: none;
+        cursor: pointer;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    } &::-webkit-scrollbar {
+        display: none;
+        
+    }
+
+    .flex-scroll.active {
+        cursor: grabbing;
+    }
+    
+
+
+    .featuredNfts {
+        padding: 6px;
+        margin-right: 5px;
+        margin-left: 5px;
+        border-radius: 10px;
+        background-color: white;
+        
+        img {
+            height: 10em;
+            
+            object-fit: contain;
+            border-radius: 20px;
+            padding: 10px;
+            pointer-events: none;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        hr {
+            text-align: center;
+            // transform: translate(0, 40px);
+            // margin-left: 0;
+            border: 1px solid rgb(240, 240, 240);
+            width: 80%;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .dashboard {
+        display: block;
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    .square-back {
+        display: none;
+    }
+
+    .scroll-container {
+        margin: 0;
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        
+        grid-row-start: 2;
+        grid-row-end: span 3;
+    }
+
+    .featuredNfts {
+        
+    }
+  }

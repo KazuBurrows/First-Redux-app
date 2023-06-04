@@ -1,57 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+// https://dribbble.com/shots/19801976-NFT-Dashboard-Manage-your-NFT-Collection
+// https://dribbble.com/shots/19272172-Nft-mobile-app
+
+// https://codepen.io/ahmadnasr/pen/KKpvNGY
+
+import React, { useState, useCallback } from 'react';
+import Main from './components/main/Main'
+import Login from './components/login/Login'
+
+
+import { useSelector } from 'react-redux';      // Subscribes to state changes in Reducers.
 
 function App() {
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <>
+      {useSelector((state) => state.store.isLoginState)
+        ? <Login/>
+        : <Main/>
+      }
+    </>
+    
   );
 }
 
