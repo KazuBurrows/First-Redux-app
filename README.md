@@ -1,3 +1,6 @@
+![](React Redux App — Mozilla Firefox 2023-06-05 19-47-37.gif)
+
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
