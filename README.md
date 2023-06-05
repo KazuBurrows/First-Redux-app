@@ -1,4 +1,4 @@
-![](**React Redux App — Mozilla Firefox 2023-06-05 19-47-37.gif**)
+![](https://github.com/KazuBurrows/First-Redux-app/blob/main/React%20Redux%20App%20%E2%80%94%20Mozilla%20Firefox%202023-06-05%2019-47-37.gif)
 
 
 # Getting Started with Create React App and Redux
