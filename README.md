@@ -1,4 +1,4 @@
-![](https://github.com/KazuBurrows/First-Redux-app/blob/main/Screen%20Shot%202023-06-06%20at%2017.01.38.png)
+![](https://github.com/KazuBurrows/First-Redux-app/blob/main/Screenshot%202023-07-26%20160721.PNG)
 
 ![](https://github.com/KazuBurrows/First-Redux-app/blob/main/React%20Redux%20App%20%E2%80%94%20Mozilla%20Firefox%202023-06-05%2019-47-37.gif)
 
